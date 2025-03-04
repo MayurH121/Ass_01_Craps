@@ -42,8 +42,8 @@ public class Main {
                 }
             }
 
-            // Ask the user if they want to play again
-            while (true) {
+
+            while (true) { // Ask the user if they want to play again
                 System.out.println("Do you want to play again? (y/n)"); // Consistent prompt
                 String input = scanner.next();
 
@@ -57,8 +57,5 @@ public class Main {
                 }
             }
         }
-
-        System.out.println("Thanks for playing CRAPS! Goodbye!");
-        scanner.close();
     }
 }
