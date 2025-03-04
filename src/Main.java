@@ -41,19 +41,24 @@ public class Main {
                     }
                 }
             }
-            while (true)
-            {
-                System.out.println("Do you want to play again? (Y/N)"); // Ask the user if they want to play again
+
+            // Ask the user if they want to play again
+            while (true) {
+                System.out.println("Do you want to play again? (y/n)"); // Consistent prompt
                 String input = scanner.next();
 
                 if (input.equalsIgnoreCase("n")) {
                     continuePlaying = false;
+                    break;
                 } else if (input.equalsIgnoreCase("y")) {
                     break;
                 } else {
-                    System.out.println("Please enter a valid input and not " + input);
+                    System.out.println("Invalid input. Please enter 'y' or 'n'.");
                 }
             }
         }
+
+        System.out.println("Thanks for playing CRAPS! Goodbye!");
+        scanner.close();
     }
 }
